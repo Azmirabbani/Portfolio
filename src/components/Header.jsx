@@ -4,6 +4,7 @@ const LINKS = [
   ["#keahlian", "Keahlian"],
   ["#riwayat", "Riwayat"],
   ["#proyek", "Proyek"],
+  ["#sertifikat", "Sertifikat"],
   ["#kontak", "Kontak"],
 ];
 

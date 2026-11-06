@@ -76,6 +76,32 @@ export function LinkedinIcon({ size = 28 }) {
   );
 }
 
+export function MailIcon({ size = 22 }) {
+  return (
+    <svg viewBox="0 0 24 24" width={size} height={size} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+      <rect x="3" y="5" width="18" height="14" rx="2.5" />
+      <path d="M3.5 7.5l8.5 6 8.5-6" />
+    </svg>
+  );
+}
+
+export function PinIcon({ size = 22 }) {
+  return (
+    <svg viewBox="0 0 24 24" width={size} height={size} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+      <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.500C5 14.800 12 21 12 21z" />
+      <circle cx="12" cy="9.500" r="2.500" />
+    </svg>
+  );
+}
+
+export function IeeeIcon({ size = 22 }) {
+  return (
+    <svg viewBox="0 0 24 24" width={size} height={size} fill="currentColor" aria-hidden="true" focusable="false">
+      <path d={siIeee.path} />
+    </svg>
+  );
+}
+
 // Logo perusahaan dari src/assets/logos/<slug>.*, atau monogram bila file belum ada.
 const files = import.meta.glob("../assets/logos/*.{png,jpg,jpeg,svg,webp}", { eager: true, import: "default" });
 const bySlug = Object.fromEntries(

@@ -17,6 +17,14 @@ import n8nFeedback from "../assets/n8n_feedback.webp";
 import n8nWebinar from "../assets/n8n_webinar.webp";
 import n8nSocial from "../assets/n8n_social.webp";
 import n8nChat from "../assets/n8n_chat.webp";
+import certMyskill from "../assets/certs/myskill-bootcamp.webp";
+import certTalenthub from "../assets/certs/talenthub-data-science.webp";
+import certIsritiAuthor from "../assets/certs/isriti-author.webp";
+import certIsritiPresenter from "../assets/certs/isriti-presenter.webp";
+import certHimaStaff from "../assets/certs/hima-staff-ahli.webp";
+import certAnniv from "../assets/certs/hima-anniv-insight.webp";
+import certAbdimas from "../assets/certs/abdimas-assuruur.webp";
+import certAllianz from "../assets/certs/allianz-melek-finansial.webp";
 
 export const profile = {
   name: "Azmi Rizqullah Rabbani",
@@ -406,3 +414,106 @@ export const companies = {
 
 // Deretan di bawah hero ("Pernah bersama").
 export const companyStrip = ["mekari", "pupuk-kujang", "telkom-indonesia", "telkom-university"];
+
+// Bagian Sertifikat. Berkas lengkap ada di public/sertifikat (dibuka di tab baru), thumbnail di src/assets/certs.
+export const certificateGroups = [
+  {
+    label: "Pelatihan dan bootcamp",
+    items: [
+      {
+        title: "AI & Automation Bootcamp",
+        issuer: "MySkill Intensive Bootcamp · Batch 3",
+        when: "28 Apr – 23 Jun 2026",
+        id: "No. 325039/AIA/LM/7/2026",
+        detail: "Predikat Distinction dengan nilai akhir 94/100: kehadiran 80, tugas personal 100, post test 100.",
+        thumb: certMyskill,
+        alt: "Sertifikat Certificate of Completion MySkill AI & Automation Bootcamp atas nama Azmi Rizqullah Rabbani",
+        files: [
+          { label: "Sertifikat", href: "/sertifikat/myskill-bootcamp.jpg" },
+          { label: "Rincian nilai", href: "/sertifikat/myskill-bootcamp-nilai.jpg" },
+        ],
+      },
+      {
+        title: "Data Science Fundamentals",
+        issuer: "Talent Class Batch 14 · Talenthub, Pusat Pasar Kerja Kemnaker RI",
+        when: "15 – 26 Jul 2024",
+        id: "No. B-1/1425/PK.00/VIII/2024",
+        detail: "Dinyatakan lulus dengan nilai 92,3/100. Materi: SQL, Python, pengolahan data, visualisasi, EDA, machine learning, dan proyek portofolio.",
+        thumb: certTalenthub,
+        alt: "Sertifikat kelulusan Talent Class Batch 14 Data Science Fundamentals atas nama Azmi Rizqullah Rabbani",
+        files: [{ label: "Sertifikat dan nilai (PDF)", href: "/sertifikat/talenthub-data-science.pdf" }],
+      },
+    ],
+  },
+  {
+    label: "Publikasi dan konferensi",
+    items: [
+      {
+        title: "Author, ISRITI 2025",
+        issuer: "2025 8th International Seminar on Research of Information Technology and Intelligent Systems · Universitas Teknologi Digital Indonesia",
+        when: "11 Des 2025 · Yogyakarta",
+        detail: "Penulis makalah Car Damage Detection using YOLOv11 and RT-DETR bersama Gamma Kosala.",
+        thumb: certIsritiAuthor,
+        alt: "Sertifikat penulis makalah ISRITI 2025 atas nama Azmi Rizqullah Rabbani dan Gamma Kosala",
+        files: [{ label: "Lihat sertifikat (PDF)", href: "/sertifikat/isriti-author.pdf" }],
+      },
+      {
+        title: "Presenter, ISRITI 2025",
+        issuer: "2025 8th International Seminar on Research of Information Technology and Intelligent Systems · Universitas Teknologi Digital Indonesia",
+        when: "11 Des 2025 · Yogyakarta",
+        detail: "Pemakalah (presenter) untuk makalah yang sama.",
+        thumb: certIsritiPresenter,
+        alt: "Sertifikat presenter ISRITI 2025 atas nama Azmi Rizqullah Rabbani",
+        files: [{ label: "Lihat sertifikat (PDF)", href: "/sertifikat/isriti-presenter.pdf" }],
+      },
+    ],
+  },
+  {
+    label: "Organisasi dan kepanitiaan",
+    items: [
+      {
+        title: "Staff Ahli Divisi Bisnis dan Kewirausahaan",
+        issuer: "HIMA S1 Informatika Telkom University · Kabinet Baskara",
+        when: "Periode 2024",
+        detail: "Sertifikat penghargaan atas kepengurusan di Badan Pengurus Harian.",
+        thumb: certHimaStaff,
+        alt: "Sertifikat penghargaan Staff Ahli Divisi Bisnis dan Kewirausahaan HIMA S1 Informatika Telkom University 2024",
+        files: [{ label: "Lihat sertifikat (PDF)", href: "/sertifikat/hima-staff-ahli.pdf" }],
+      },
+      {
+        title: "Kepala Divisi Finance, Anniv Insight 2024",
+        issuer: "HIMA IF Telkom University",
+        when: "Anniv Insight HIMA IF 2024",
+        id: "No. 003/SER/KMS/1/2025",
+        detail: "Kepala Divisi Finance pada acara perayaan hari terbentuknya HIMA IF dan sesi insight untuk mahasiswa S1 Informatika.",
+        thumb: certAnniv,
+        alt: "Sertifikat Kepala Divisi Finance Anniv Insight HIMA IF 2024 atas nama Azmi Rizqullah Rabbani",
+        files: [{ label: "Lihat sertifikat (PDF)", href: "/sertifikat/hima-anniv-insight.pdf" }],
+      },
+      {
+        title: "Panitia Workshop Kecerdasan Artifisial dan Kejahatan Siber",
+        issuer: "Pengabdian kepada Masyarakat · PPM Universitas Telkom",
+        when: "10 Mei 2025 · Pondok Pesantren Modern Assuruur",
+        id: "No. 2541/ABD08/PPM-JPM/2025",
+        detail: "Panitia kegiatan pengabdian kepada masyarakat: workshop pengenalan kecerdasan artifisial dan kejahatan siber.",
+        thumb: certAbdimas,
+        alt: "Sertifikat panitia workshop pengenalan kecerdasan artifisial dan kejahatan siber, PPM Universitas Telkom",
+        files: [{ label: "Lihat sertifikat (PDF, NIM disamarkan)", href: "/sertifikat/abdimas-assuruur.pdf" }],
+      },
+    ],
+  },
+  {
+    label: "Relawan",
+    items: [
+      {
+        title: "Relawan, Program Anak Muda Melek Finansial",
+        issuer: "Program Belajar Digital Allianz · Solve Education! Foundation dan Yayasan Allianz Peduli",
+        when: "11 Okt 2023",
+        detail: "Berpartisipasi sebagai relawan dalam program literasi keuangan untuk anak muda (sertifikat partisipasi).",
+        thumb: certAllianz,
+        alt: "Certificate of Participation Program Belajar Digital Allianz atas nama Azmi Rizqullah Rabbani",
+        files: [{ label: "Lihat sertifikat (PDF)", href: "/sertifikat/allianz-melek-finansial.pdf" }],
+      },
+    ],
+  },
+];
